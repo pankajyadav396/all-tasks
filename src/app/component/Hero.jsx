@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 
 const Hero = () => {
-    const [first, setFirst] = useState('tab1');
+    const getDefaultTab = () => `tab${new Date().getMonth()}`;
+    const [first, setFirst] = useState(getDefaultTab());
     const handleTabChange = (tab) => {
         setFirst(tab);
     };
@@ -16,22 +17,22 @@ const Hero = () => {
                         value={first}
                         onChange={(e) => handleTabChange(e.target.value)}
                     >
-                        <option value="tab1">March</option>
-                        <option value="tab2">April</option>
-                        <option value="tab3">May</option>
-                        <option value="tab4">June</option>
+                        <option value="tab2">March</option>
+                        <option value="tab3">April</option>
+                        <option value="tab4">May</option>
+                        <option value="tab5">June</option>
                         <option value="tab5">July</option>
-                        <option value="tab6">August</option>
-                        <option value="tab7">September</option>
-                        <option value="tab8">October</option>
-                        <option value="tab9">November</option>
-                        <option value="tab10">December</option>
+                        <option value="tab7">August</option>
+                        <option value="tab8">September</option>
+                        <option value="tab9">October</option>
+                        <option value="tab10">November</option>
+                        <option value="tab11">December</option>
                     </select>
 
                     <h1 className='text-[50px] ff-poppins font-medium  leading-normal'>All tasks of year 2024</h1>
                     <a href='#' className=' cursor-pointer text-[40px] font-semibold'>Profile</a>
                 </div>
-                {first === 'tab1' && (
+                {first === 'tab2' && (
                     <div className='w-full min-h-[216px] mt-8'>
                         <div className="flex flex-wrap flex-row w-full items-center">
                             <div className=' w-5/12 px-3'>
@@ -103,14 +104,37 @@ const Hero = () => {
                     </div>
                 )}
 
-                {first === 'tab2' && (
-                    <div></div>
-                )}
                 {first === 'tab3' && (
-                    <div></div>
-                )}
-                {first === 'tab2' && (
-                    <div></div>
+                    <div className=' w-full mt-8'>
+                        <div className='flex flex-wrap flex-row w-full items-center '>
+                            <div className=' w-5/12 px-3 mt-10'>
+                                <p className="text-slate-950 text-2xl font-semibold font-poppins leading-[27px]">NobelMind page :-</p>
+                            </div>
+                            <div className='w-7/12 px-3 mt-10'>
+                                <div className='flex gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Github Link:- </p>
+                                    <a href="https://github.com/pankajyadav396/noblemind-page.git" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>github.com/pankajyadav396/noblemind.git</a>
+                                </div>
+                                <div className='flex mt-3 gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Live Link:- </p>
+                                    <a href="https://noblemind-page.vercel.app/" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>https://noblemind.vercel.app/</a>
+                                </div>
+                            </div>
+                            <div className='    w-5/12 px-3 mt-10'>
+                                <p className="text-slate-950 text-2xl font-semibold font-poppins leading-[27px]">Emailjs with form validation :-</p>
+                            </div>
+                            <div className='w-7/12 px-3 mt-10'>
+                                <div className='flex gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Github Link:- </p>
+                                    <a href="https://github.com/pankajyadav396/emaljs-page.git" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>github.com/pankajyadav396/form-validation.git</a>
+                                </div>
+                                <div className='flex mt-3 gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Live Link:- </p>
+                                    <a href="https://emaljs-page.vercel.app/" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>https://emailjs.vercel.app/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 )}
                 {first === 'tab4' && (
                     <div></div>
@@ -131,6 +155,9 @@ const Hero = () => {
                     <div></div>
                 )}
                 {first === 'tab10' && (
+                    <div></div>
+                )}
+                {first === 'tab11' && (
                     <div></div>
                 )}
 
