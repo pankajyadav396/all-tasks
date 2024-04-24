@@ -146,6 +146,19 @@ const Hero = () => {
                                     <a href="https://mark-jochim-hubrich.vercel.app/" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>https://mark-jochim-hubrich.vercel.app/</a>
                                 </div>
                             </div>
+                            <div className='    w-5/12 px-3 mt-10'>
+                                <p className="text-slate-950 text-2xl font-semibold font-poppins leading-[27px]">React hooks practice :-</p>
+                            </div>
+                            <div className='w-7/12 px-3 mt-10'>
+                                <div className='flex gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Github Link:- </p>
+                                    <a href="https://github.com/pankajyadav396/React-hooks-practice.git" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>https://github.com/pankajyadav396/React-hooks-practice.git</a>
+                                </div>
+                                <div className='flex mt-3 gap-5'>
+                                    <p className="text-gray-400 text-base font-normal font-poppins leading-7">Live Link:- </p>
+                                    <a href="https://react-hooks-practice-six.vercel.app/" target='_blank' className='text-xl hover:underline hover:text-fuchsia-700 text-black'>https://react-hooks-practice-six.vercel.app/</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 )}
